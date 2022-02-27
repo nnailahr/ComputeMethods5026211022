@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class TestClass5026211022 {
+    public static void main(String[] args) {
+        ComputeMethods5026211022 CM = new ComputeMethods5026211022();
+        Scanner input = new Scanner(System.in);
+
+        //farenheit converter
+        System.out.println("Input a degree in Farenheit: ");
+        double farenheit = input.nextDouble();
+        double celcius = CM.fToC(farenheit);
+        System.out.println("Temp in celcius is" +celcius);
+
+        //hypothenuse finder
+        System.out.println("Please input the 1st lenght, could be the apposite or adjacent");
+        int aleng = input.nextInt();
+        System.out.println("Please input the 2nd lenght");
+        int bleng = input.nextInt();
+        double third = CM.hypotenuse(aleng, bleng);
+        System.out.println("Hypothenuse is" +third);
+
+        //dice roll
+        System.out.println("This is the dice roller, welcome");
+        int dice = CM.roll();
+        System.out.println("The sum of the dice value is" +dice);
+    }
+}
