@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class ProblemANaila5026211022{
+    public static Scanner input;
+    public static void main(String[] args) {
+        input = new Scanner(System.in);
+        System.out.print("Please enter your name: ");
+        System.out.println(changeNameFormat(input.nextLine()));
+    }
+    public static String changeNameFormat(String input) {
+        String firstName, lastName;
+        firstName = input.substring(0, input.indexOf(" "));
+        lastName = input.substring(input.indexOf(" ")+1);
+        System.out.print("Your name is: "); return  lastName + ", " + firstName;
+    }
+}
